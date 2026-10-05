@@ -1,0 +1,16 @@
+question,expected,actual,correct
+Where was Physics 101 moved after the water leak?,VECTOR,VECTOR,True
+What caused Physics 101 to change classrooms?,VECTOR,VECTOR,True
+Where did the Physics class go when Lab 3 had a problem?,VECTOR,GRAPH,False
+What happened after the leak in Science Lab 3?,VECTOR,VECTOR,True
+Is there a penalty if my assignment is three days late?,VECTOR,VECTOR,True
+What happens when a student misses too many classes without an excuse?,VECTOR,VECTOR,True
+Who is Emma Johnson taught by?,GRAPH,GRAPH,True
+What department is Daniel Smith part of?,GRAPH,EXACT,False
+Who runs the department Daniel Smith works in?,GRAPH,GRAPH,True
+What classes is Noah Williams taking?,GRAPH,GRAPH,True
+Who is responsible for teaching Geometry?,GRAPH,GRAPH,True
+Which subject is associated with Physics 101?,GRAPH,GRAPH,True
+Search for Emma Johnson,EXACT,EXACT,True
+Can you find Daniel Smith?,EXACT,EXACT,True
+Look up Priya Patel for me,EXACT,EXACT,True

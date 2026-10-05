@@ -1,0 +1,71 @@
+[
+  {
+    "question": "Who teaches Emma Johnson?",
+    "expected": [
+      "Daniel Smith",
+      "Laura Taylor"
+    ]
+  },
+  {
+    "question": "Which department does Daniel Smith belong to?",
+    "expected": [
+      "Science"
+    ]
+  },
+  {
+    "question": "Who heads the Science department?",
+    "expected": [
+      "Rachel Wilson"
+    ]
+  },
+  {
+    "question": "Which students are enrolled in Physics 101?",
+    "expected": [
+      "Emma Johnson",
+      "Noah Williams",
+      "Liam Anderson",
+      "Ethan Thompson",
+      "Mia Robinson",
+      "Henry Walker",
+      "Harper King",
+      "Matthew Green"
+    ]
+  },
+  {
+    "question": "What subject is Physics 101 for?",
+    "expected": [
+      "Physics"
+    ]
+  },
+  {
+    "question": "Who teaches Geometry?",
+    "expected": [
+      "Michael Brown"
+    ]
+  },
+  {
+    "question": "Which department does Laura Taylor belong to?",
+    "expected": [
+      "Mathematics"
+    ]
+  },
+  {
+    "question": "Who heads the department that Daniel Smith belongs to?",
+    "expected": [
+      "Rachel Wilson"
+    ]
+  },
+  {
+    "question": "Which classes does Emma Johnson attend?",
+    "expected": [
+      "Physics 101",
+      "Algebra 2"
+    ]
+  },
+  {
+    "question": "Which subject is taught in US History?",
+    "expected": [
+      "History"
+    ]
+  }
+]

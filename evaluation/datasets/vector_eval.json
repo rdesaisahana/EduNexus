@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Can I submit my homework four days late?",
+    "expected": "Late Assignment Policy"
+  },
+  {
+    "question": "What happens if I have too many unexcused absences?",
+    "expected": "Attendance Policy"
+  },
+  {
+    "question": "Why was Physics 101 moved to another lab?",
+    "expected": "Science Lab Incident"
+  },
+  {
+    "question": "Do I need permission to go on a field trip?",
+    "expected": "Field Trip Policy"
+  },
+  {
+    "question": "Can students install games on school laptops?",
+    "expected": "Technology Policy"
+  },
+  {
+    "question": "What grade is considered an A?",
+    "expected": "Grading Policy"
+  },
+  {
+    "question": "What should I do if my school laptop is damaged?",
+    "expected": "Technology Policy"
+  },
+  {
+    "question": "When should my parent report that I am absent?",
+    "expected": "Attendance Policy"
+  },
+  {
+    "question": "How early do I need to submit my field trip form?",
+    "expected": "Field Trip Policy"
+  },
+  {
+    "question": "Can a teacher give me more time to submit an assignment if I am sick?",
+    "expected": "Late Assignment Policy"
+  }
+]

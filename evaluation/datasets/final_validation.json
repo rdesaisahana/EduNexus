@@ -1,0 +1,64 @@
+[
+  {
+    "question": "Which teachers are responsible for the classes Emma Johnson is taking?",
+    "expected_answer": "Daniel Smith and Laura Taylor teach the classes Emma Johnson is taking."
+  },
+  {
+    "question": "What academic department is Michael Brown associated with?",
+    "expected_answer": "Michael Brown belongs to the Mathematics department."
+  },
+  {
+    "question": "Who is the department head for Daniel Smith's department?",
+    "expected_answer": "Rachel Wilson is the head of Daniel Smith's Science department."
+  },
+  {
+    "question": "What courses is Sophia Davis enrolled in?",
+    "expected_answer": "Sophia Davis is enrolled in Biology 101 and Algebra 2."
+  },
+  {
+    "question": "Who is the instructor for US History?",
+    "expected_answer": "Priya Patel teaches US History."
+  },
+
+  {
+    "question": "If my assignment is only two days late, will points be deducted?",
+    "expected_answer": "No. Assignments submitted one or two days late receive no penalty."
+  },
+  {
+    "question": "By what time should my family notify the school if I am absent?",
+    "expected_answer": "A parent or guardian must report the absence before 9 AM."
+  },
+  {
+    "question": "Could illness allow me extra time to turn in an assignment?",
+    "expected_answer": "Yes. A teacher may approve an extension for illness or other documented circumstances."
+  },
+  {
+    "question": "Were any students or teachers hurt during the Science Lab 3 leak?",
+    "expected_answer": "No students or teachers were injured during the Science Lab 3 water leak."
+  },
+  {
+    "question": "When did Physics 101 return to its original science lab?",
+    "expected_answer": "Physics 101 returned to Science Lab 3 the following day."
+  },
+  {
+    "question": "What happens if I do not turn in a signed permission form for a field trip?",
+    "expected_answer": "Students without a completed permission form cannot participate in the field trip."
+  },
+
+  {
+    "question": "Search for Sophia Davis",
+    "expected_answer": "Sophia Davis is a student."
+  },
+  {
+    "question": "Look up Michael Brown",
+    "expected_answer": "Michael Brown is a teacher."
+  },
+  {
+    "question": "Find James Miller",
+    "expected_answer": "James Miller is a teacher."
+  },
+  {
+    "question": "Can you look up Olivia Martin?",
+    "expected_answer": "Olivia Martin is a student."
+  }
+]

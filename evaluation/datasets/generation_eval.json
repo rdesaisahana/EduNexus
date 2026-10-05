@@ -1,0 +1,84 @@
+[
+  {
+    "question": "Who teaches Emma Johnson?",
+    "expected_answer": "Daniel Smith and Laura Taylor teach Emma Johnson."
+  },
+  {
+    "question": "Which department does Daniel Smith belong to?",
+    "expected_answer": "Daniel Smith belongs to the Science department."
+  },
+  {
+    "question": "Who heads the Science department?",
+    "expected_answer": "Rachel Wilson heads the Science department."
+  },
+  {
+    "question": "Which classes does Emma Johnson attend?",
+    "expected_answer": "Emma Johnson attends Physics 101 and Algebra 2."
+  },
+  {
+    "question": "Who teaches Geometry?",
+    "expected_answer": "Michael Brown teaches Geometry."
+  },
+  {
+    "question": "Who heads the department that Daniel Smith belongs to?",
+    "expected_answer": "Rachel Wilson heads the Science department that Daniel Smith belongs to."
+  },
+  {
+    "question": "What subject is Physics 101 for?",
+    "expected_answer": "Physics 101 is for the subject Physics."
+  },
+  {
+    "question": "Which department does Laura Taylor belong to?",
+    "expected_answer": "Laura Taylor belongs to the Mathematics department."
+  },
+
+  {
+    "question": "Can I submit my homework four days late?",
+    "expected_answer": "Yes. Assignments may be submitted up to five school days late, but after the second day a 10 percent deduction applies unless an extension is approved."
+  },
+  {
+    "question": "What happens if I have more than five unexcused absences?",
+    "expected_answer": "The student must meet with their counselor and parent or guardian."
+  },
+  {
+    "question": "Why was Physics 101 moved to another lab?",
+    "expected_answer": "Physics 101 was temporarily moved because a water leak affected Science Lab 3."
+  },
+  {
+    "question": "Where was Physics 101 moved after the water leak?",
+    "expected_answer": "Physics 101 was temporarily moved to Science Lab 5."
+  },
+  {
+    "question": "Do I need permission to participate in a school field trip?",
+    "expected_answer": "Yes. A signed parent or guardian permission form is required."
+  },
+  {
+    "question": "How early must a field trip permission form be submitted?",
+    "expected_answer": "The permission form must be submitted at least three school days before the trip."
+  },
+  {
+    "question": "Can students install games on school laptops?",
+    "expected_answer": "No. Personal gaming and unauthorized software installation are prohibited."
+  },
+  {
+    "question": "What should a student do if a school laptop is damaged?",
+    "expected_answer": "The student should report the damaged device to the technology office."
+  },
+
+  {
+    "question": "Find Emma Johnson",
+    "expected_answer": "Emma Johnson is a student."
+  },
+  {
+    "question": "Look up Daniel Smith",
+    "expected_answer": "Daniel Smith is a teacher."
+  },
+  {
+    "question": "Find Rachel Wilson",
+    "expected_answer": "Rachel Wilson is a teacher."
+  },
+  {
+    "question": "Look up Noah Williams",
+    "expected_answer": "Noah Williams is a student."
+  }
+]

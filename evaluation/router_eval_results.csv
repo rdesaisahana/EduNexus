@@ -1,0 +1,16 @@
+question,expected,actual,correct
+Who teaches Emma Johnson?,GRAPH,GRAPH,True
+Which department does Daniel Smith belong to?,GRAPH,GRAPH,True
+Who heads the Science department?,GRAPH,GRAPH,True
+Which students are enrolled in Physics 101?,GRAPH,GRAPH,True
+What subject does Laura Taylor teach?,GRAPH,GRAPH,True
+Can I submit my homework four days late?,VECTOR,VECTOR,True
+What happens if I have too many unexcused absences?,VECTOR,VECTOR,True
+Why was Physics 101 moved to another lab?,VECTOR,VECTOR,True
+Do I need permission to go on a field trip?,VECTOR,VECTOR,True
+Can students install games on school laptops?,VECTOR,VECTOR,True
+Find Emma Johnson,EXACT,EXACT,True
+Look up Daniel Smith,EXACT,EXACT,True
+Find Rachel Wilson,EXACT,EXACT,True
+Search for Noah Williams,EXACT,EXACT,True
+Look up Priya Patel,EXACT,EXACT,True

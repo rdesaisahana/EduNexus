@@ -1,0 +1,42 @@
+###  BASELINE GRAPH SCHEMA ###
+
+graph_schema = """
+Nodes:
+Student(name)
+Teacher(name)
+Class(name)
+Subject(name)
+Department(name)
+
+Relationships:
+Student -[:ENROLLED_IN]-> Class
+Teacher -[:TEACHES]-> Class
+Class -[:FOR_SUBJECT]-> Subject
+Teacher -[:BELONGS_TO]-> Department
+Teacher -[:HEADS]-> Department
+"""
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+### BASELINE GENERATE_CYPHER PROMPT  ###
+
+prompt = f"""
+You are a Neo4j Cypher expert.
+
+Use only this graph schema:
+
+{graph_schema}
+
+Question:
+{question}
+
+Rules:
+- Generate a read-only Cypher query.
+- Always give returned values a clear alias.
+- Return only the Cypher query.
+- Do not include markdown or explanations.
+
+Example:
+RETURN t.name AS teacher
+
+"""
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

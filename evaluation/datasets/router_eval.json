@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Who teaches Emma Johnson?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Which department does Daniel Smith belong to?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Who heads the Science department?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Which students are enrolled in Physics 101?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "What subject does Laura Taylor teach?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Can I submit my homework four days late?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "What happens if I have too many unexcused absences?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Why was Physics 101 moved to another lab?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Do I need permission to go on a field trip?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Can students install games on school laptops?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Find Emma Johnson",
+    "expected": "EXACT"
+  },
+  {
+    "question": "Look up Daniel Smith",
+    "expected": "EXACT"
+  },
+  {
+    "question": "Find Rachel Wilson",
+    "expected": "EXACT"
+  },
+  {
+    "question": "Search for Noah Williams",
+    "expected": "EXACT"
+  },
+  {
+    "question": "Look up Priya Patel",
+    "expected": "EXACT"
+  }
+]

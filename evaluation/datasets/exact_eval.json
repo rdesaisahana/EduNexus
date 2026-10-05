@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Emma Johnson",
+    "expected": "Emma Johnson"
+  },
+  {
+    "query": "Daniel Smith",
+    "expected": "Daniel Smith"
+  },
+  {
+    "query": "Rachel Wilson",
+    "expected": "Rachel Wilson"
+  },
+  {
+    "query": "Noah Williams",
+    "expected": "Noah Williams"
+  },
+  {
+    "query": "Priya Patel",
+    "expected": "Priya Patel"
+  },
+  {
+    "query": "Laura Taylor",
+    "expected": "Laura Taylor"
+  },
+  {
+    "query": "Michael Brown",
+    "expected": "Michael Brown"
+  },
+  {
+    "query": "Sophia Davis",
+    "expected": "Sophia Davis"
+  },
+  {
+    "query": "Olivia Martin",
+    "expected": "Olivia Martin"
+  },
+  {
+    "query": "James Miller",
+    "expected": "James Miller"
+  }
+]

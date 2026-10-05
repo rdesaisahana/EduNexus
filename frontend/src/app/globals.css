@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* ---------- EduNexus design tokens ---------- */
+:root {
+  --paper: #f7f6f2;
+  --surface: #ffffff;
+  --surface-2: #fbfaf7;
+  --ink: #1a1d23;
+  --ink-2: #474d5a;
+  --ink-3: #7b8190;
+  --line: #e5e2da;
+  --line-2: #eeebe4;
+  --accent: #24406b;
+  --accent-soft: #e9eef6;
+
+  --graph: #4a5796;
+  --graph-bg: #eef0f8;
+  --graph-line: #d5d9ee;
+  --vector: #2e6b5f;
+  --vector-bg: #e9f2ef;
+  --vector-line: #cbe0d9;
+  --exact: #8a5a22;
+  --exact-bg: #f6efe4;
+  --exact-line: #e8d6bd;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-graph: var(--graph);
+  --color-graph-bg: var(--graph-bg);
+  --color-graph-line: var(--graph-line);
+  --color-vector: var(--vector);
+  --color-vector-bg: var(--vector-bg);
+  --color-vector-line: var(--vector-line);
+  --color-exact: var(--exact);
+  --color-exact-bg: var(--exact-bg);
+  --color-exact-line: var(--exact-line);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-newsreader);
+  --font-mono: var(--font-jetbrains);
+
+  --shadow-card: 0 1px 2px rgba(26, 29, 35, 0.04), 0 4px 16px -6px rgba(26, 29, 35, 0.06);
+  --shadow-lift: 0 1px 2px rgba(26, 29, 35, 0.05), 0 12px 32px -12px rgba(26, 29, 35, 0.14);
+
+  --animate-reveal: reveal 480ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-fade: fade 320ms ease-out both;
+  --animate-pulse-soft: pulse-soft 1.4s ease-in-out infinite;
+
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.45; }
+  }
+}
+
+html { scrollbar-gutter: stable; background: var(--paper); }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+::selection { background: var(--accent-soft); color: var(--ink); }
+
+/* Faint dotted grid behind the hero — echoes the "connected nodes" motif. */
+.paper-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(36, 64, 107, 0.09) 1px, transparent 0);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+}
+
+/* Smooth height transitions for collapsibles. */
+.collapse-grid { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 280ms ease; }
+.collapse-grid[data-open="true"] { grid-template-rows: 1fr; }
+.collapse-grid > * { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+}

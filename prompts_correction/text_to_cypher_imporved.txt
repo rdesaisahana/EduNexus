@@ -1,0 +1,82 @@
+### ###  IMPROVED GRAPH SCHEMA ###
+
+graph_schema = """
+Nodes:
+
+Student(name)
+Examples: Emma Johnson, Noah Williams, Sophia Davis
+
+Teacher(name)
+Examples: Daniel Smith, Rachel Wilson, Laura Taylor, Michael Brown
+
+Class(name)
+Examples: Physics 101, Biology 101, Algebra 2,
+Geometry, English Literature, US History
+
+Subject(name)
+Examples: Physics, Biology, Mathematics, English, History
+
+Department(name)
+Examples: Science, Mathematics, English, Social Studies
+
+
+Relationships:
+
+Student -[:ENROLLED_IN]-> Class
+
+Teacher -[:TEACHES]-> Class
+
+Class -[:FOR_SUBJECT]-> Subject
+
+Teacher -[:BELONGS_TO]-> Department
+
+Teacher -[:HEADS]-> Department
+"""
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+### IMPROVED GENERATE_CYPHER PROMPT  ###
+
+ prompt = f"""
+You are a Neo4j Cypher expert.
+
+Use only the graph schema and example values below.
+
+{graph_schema}
+
+Rules:
+- Generate exactly one read-only Cypher query.
+- Use only nodes and relationships from the schema.
+- Identify whether each named entity is a Student, Teacher,
+  Class, Subject, or Department using the example values.
+- Follow relationships exactly as defined in the schema.
+- Support multi-hop relationship questions.
+- Always give returned values a clear alias.
+- Never return an empty response.
+- Return only the Cypher query.
+- Do not include markdown or explanations.
+
+Examples:
+
+Question:
+Who teaches Geometry?
+
+Cypher:
+MATCH (t:Teacher)-[:TEACHES]->(c:Class {{name: "Geometry"}})
+RETURN t.name AS teacher
+
+
+Question:
+Who heads the department that Daniel Smith belongs to?
+
+Cypher:
+MATCH (t:Teacher {{name: "Daniel Smith"}})
+-[:BELONGS_TO]->(d:Department)
+<-[:HEADS]-(h:Teacher)
+RETURN h.name AS department_head
+
+
+Question:
+{question}
+
+Cypher:
+"""

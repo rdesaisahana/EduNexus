@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Where was Physics 101 moved after the water leak?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "What caused Physics 101 to change classrooms?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Where did the Physics class go when Lab 3 had a problem?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "What happened after the leak in Science Lab 3?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Is there a penalty if my assignment is three days late?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "What happens when a student misses too many classes without an excuse?",
+    "expected": "VECTOR"
+  },
+  {
+    "question": "Who is Emma Johnson taught by?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "What department is Daniel Smith part of?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Who runs the department Daniel Smith works in?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "What classes is Noah Williams taking?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Who is responsible for teaching Geometry?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Which subject is associated with Physics 101?",
+    "expected": "GRAPH"
+  },
+  {
+    "question": "Search for Emma Johnson",
+    "expected": "EXACT"
+  },
+  {
+    "question": "Can you find Daniel Smith?",
+    "expected": "EXACT"
+  },
+  {
+    "question": "Look up Priya Patel for me",
+    "expected": "EXACT"
+  }
+]

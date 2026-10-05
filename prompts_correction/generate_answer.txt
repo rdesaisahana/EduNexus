@@ -1,0 +1,49 @@
+####   BASELINE PROMPT IN GENERATE_ANSWER 
+ 
+ """Generate answer from retrieved results."""
+
+    if not results:
+        return "I don't have enough information."
+
+    prompt = f"""
+Answer the question using only the retrieved information.
+
+Question:
+{question}
+
+Retrieved information:
+{results}
+
+Give a short and clear answer.
+"""
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+####   IMPROVED PROMPT IN GENERATE_ANSWER V1
+
+"""Generate answer from retrieved results."""
+
+    if not results:
+        return "I don't have enough information."
+
+    prompt = f"""
+Answer the question using only the retrieved information.
+
+Question:
+{question}
+
+Retrieved Information:
+{results}
+
+Instructions:
+- Give a clear and concise answer.
+- Include all facts directly relevant to the question.
+- Include relevant conditions, exceptions, penalties,
+  requirements, or limitations when they affect the answer.
+- Do not add information that is not in the retrieved information.
+"""
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+####   IMPROVED PROMPT IN GENERATE_ANSWER V2

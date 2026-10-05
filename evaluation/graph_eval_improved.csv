@@ -1,0 +1,21 @@
+question,expected,actual,correct,cypher
+Who teaches Emma Johnson?,"['Daniel Smith', 'Laura Taylor']","['Daniel Smith', 'Laura Taylor']",True,"MATCH (s:Student {name: ""Emma Johnson""})-[:ENROLLED_IN]->(c:Class)<-[:TEACHES]-(t:Teacher)
+RETURN t.name AS teacher"
+Which department does Daniel Smith belong to?,['Science'],['Science'],True,"MATCH (t:Teacher {name: ""Daniel Smith""})-[:BELONGS_TO]->(d:Department)
+RETURN d.name AS department"
+Who heads the Science department?,['Rachel Wilson'],['Rachel Wilson'],True,"MATCH (d:Department {name: ""Science""})<-[:HEADS]-(h:Teacher)
+RETURN h.name AS department_head"
+Which students are enrolled in Physics 101?,"['Emma Johnson', 'Noah Williams', 'Liam Anderson', 'Ethan Thompson', 'Mia Robinson', 'Henry Walker', 'Harper King', 'Matthew Green']","['Emma Johnson', 'Noah Williams', 'Liam Anderson', 'Ethan Thompson', 'Mia Robinson', 'Henry Walker', 'Harper King', 'Matthew Green']",True,"MATCH (s:Student)-[:ENROLLED_IN]->(c:Class {name: ""Physics 101""})
+RETURN s.name AS student"
+What subject is Physics 101 for?,['Physics'],['Physics'],True,"MATCH (c:Class {name: ""Physics 101""})-[:FOR_SUBJECT]->(s:Subject)
+RETURN s.name AS subject"
+Who teaches Geometry?,['Michael Brown'],['Michael Brown'],True,"MATCH (t:Teacher)-[:TEACHES]->(c:Class {name: ""Geometry""})
+RETURN t.name AS teacher"
+Which department does Laura Taylor belong to?,['Mathematics'],['Mathematics'],True,"MATCH (t:Teacher {name: ""Laura Taylor""})-[:BELONGS_TO]->(d:Department)
+RETURN d.name AS department"
+Who heads the department that Daniel Smith belongs to?,['Rachel Wilson'],['Rachel Wilson'],True,"MATCH (t:Teacher {name: ""Daniel Smith""})-[:BELONGS_TO]->(d:Department)<-[:HEADS]-(h:Teacher)
+RETURN h.name AS department_head"
+Which classes does Emma Johnson attend?,"['Physics 101', 'Algebra 2']","['Physics 101', 'Algebra 2']",True,"MATCH (s:Student {name: ""Emma Johnson""})-[:ENROLLED_IN]->(c:Class)
+RETURN c.name AS class"
+Which subject is taught in US History?,['History'],['History'],True,"MATCH (c:Class {name: ""US History""})-[:FOR_SUBJECT]->(s:Subject)
+RETURN s.name AS subject"

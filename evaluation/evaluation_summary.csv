@@ -1,0 +1,20 @@
+Component,Version,Metric,Score,Questions
+Router,-,Accuracy,1.0,15
+Vector Retrieval,-,Hit@3,1.0,10
+Vector Retrieval,-,MRR,1.0,10
+Graph Retrieval,Baseline,Accuracy,0.8,10
+Graph Retrieval,Improved,Accuracy,1.0,10
+Exact Retrieval,-,Accuracy,1.0,10
+Generation,Baseline,Correctness,0.9,20
+Generation,Chunking Improved,Correctness,0.95,20
+Generation,Prompt v1,Correctness,0.9,20
+Generation,Route-Aware,Correctness,0.95,20
+Router,Validation Baseline,Accuracy,0.8666666666666667,15
+Router,Validation Baseline,Accuracy,0.8666666666666667,15
+Router,Validation Improved,Accuracy,1.0,15
+Generation,Final,Correctness,1.0,20
+Generation,Final,Faithfulness,1.0,20
+Final Validation,Unseen,Correctness,1.0,15
+Final Validation,Unseen,Faithfulness,1.0,15
+Generation,Precision Final,Correctness,1.0,20
+Generation,Precision Final,Faithfulness,1.0,20
